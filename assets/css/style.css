@@ -1,0 +1,170 @@
+*{
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height:90vh;
+}
+
+/* LINKS-OBEN */
+
+h1{
+  font-size:1rem;
+  margin-bottom:6rem;
+}
+
+h2{
+  font-size: 2rem;
+  margin-bottom:3rem;
+}
+
+.text p{
+  width:60%;
+  line-height:1.5rem;
+  color:gray;
+  padding-bottom:6rem;
+}
+
+
+/* RECHTS-OBEN */
+
+.bild{
+  background: url(https://www.wright20.com/items/index/2000/104_2_dieter_rams_the_jf_chen_collection_july_2018_artur_braun_and_fritz_eichler_sk_25_radio__wright_auction.jpg?t=1536592304) no-repeat center/cover;
+}
+
+.bild h2 span{
+  font-size:1rem;
+  color:gray;
+}
+
+
+/* BOTTOM */
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.bottomLeft{
+  background-color: rgb(219, 216, 216);
+  padding: 0 5% 0 5%;
+}
+
+
+.bottomRight{
+  display: flex;
+  align-items: center;
+}
+
+
+.nebeneinander{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+.pfeilRechts{
+  padding: 30px 20px;
+  background-color: black;
+  color:white;
+}
+
+
+.padding{
+  padding: 5%;
+} 
+
+.social{
+  padding-right:50%;
+}
+
+.social i{
+  font-size: 0.6rem;
+}
+
+.bottomRight div{
+  padding-right:5%;
+  text-align: right;
+}
+
+
+.bottomRight p{
+  color:gray;
+} 
+
+
+
+@media screen and (max-width:768px){
+
+  main{
+    grid-template-columns: 1fr;
+  }
+  .text p{
+  padding-bottom: 5rem;
+  }
+
+
+  .bild{
+    height:40rem;
+  }
+
+  h2{
+    font-size:2.5rem;
+  }
+
+}
+
+
+@media screen and (max-width:425px){
+  main{
+    grid-template-columns: 1fr;
+  }
+
+  .bild{
+    height: 430px;
+  }
+
+  .bild h2 {
+    font-size:1rem;
+  }
+  .bild h2 span{
+    font-size:0.8rem;
+  }
+  
+ 
+  .text p{
+    width:95%;
+    font-size:0.8rem;
+    margin-bottom:6rem;
+  
+  }
+
+  .padding{
+    padding: 12%;
+  }
+
+  h3{
+    font-size: 0.7rem;
+  }
+
+  .bottomRight p{
+  text-align: left;
+    font-size:0.6rem;
+  }
+
+
+} 
+
+
